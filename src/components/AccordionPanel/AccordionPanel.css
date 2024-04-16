@@ -1,0 +1,36 @@
+.AccordionPanel-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .AccordionPanel-header {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+  }
+
+  .AccordionPanel-content {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+  }
+
+  .AccordionPanel-content.expanded {
+    max-height: 100vh;  /* You can set this to a more appropriate value */
+    padding: 15px;
+    overflow: visible;
+  }
+
+  .AccordionPanel-content.collapsed {
+    max-height: 0;
+    padding: 0 15px;
+  }

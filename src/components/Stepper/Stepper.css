@@ -1,0 +1,66 @@
+  /* Primary Color - Chocolate */
+  .primary-color {
+    color: chocolate;
+    background-color: transparent;
+    border-color: chocolate;
+  }
+
+  /* Secondary Color - #f3f3f3 */
+  .secondary-color {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: #f3f3f3;
+  }
+
+  /* Button Styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    margin: 10px 5px 0 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Primary Button */
+  .button.primary {
+    background-color: chocolate;
+    color: #ffffff;
+  }
+
+  /* Secondary Button */
+  .button.secondary {
+    background-color: transparent;
+    color: #f3f3f3;
+  }
+
+  /* Hover Styles for Buttons */
+  .button:hover {
+    background-color: transparent;
+    border-color: chocolate;
+  }
+
+  .button.primary:hover {
+    background-color: chocolate;
+    color: #ffffff;
+  }
+
+  .button.secondary:hover {
+    background-color: #f3f3f3;
+    color: chocolate;
+  }
+
+  /* Input Field Styles */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+  }
+
+  /* Add more styles as needed */

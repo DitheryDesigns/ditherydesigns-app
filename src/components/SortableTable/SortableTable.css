@@ -1,0 +1,71 @@
+/* Style the table container */
+.SortableTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ddd;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table header and cells */
+.SortableTable th,
+.SortableTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.SortableTable th {
+  background-color: var(--primary-color); /* Primary color */
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Style table rows with alternating background colors */
+.SortableTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Add hover effect to rows */
+.SortableTable tr:hover {
+  background-color: #ddd;
+}
+
+/* Style the pagination element */
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style pagination links/buttons */
+.pagination a,
+.pagination button {
+  color: var(--primary-color); /* Primary color */
+  background-color: transparent;
+  border: 1px solid var(--primary-color); /* Primary color */
+  padding: 6px 12px;
+  margin: 0 5px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover,
+.pagination button:hover {
+  background-color: var(--primary-color); /* Primary color */
+  color: #fff;
+}
+
+/* Style the current page indicator */
+.pagination .active {
+  background-color: var(--primary-color); /* Primary color */
+  color: #fff;
+  border: 1px solid var(--primary-color); /* Primary color */
+}
+
+.pagination-button-next {
+  transform: rotate(180deg);
+}
