@@ -18,13 +18,17 @@ const SearchBar = ({ suggestions, onChange, fuzzySearch }) => {
 
   const filterSuggestion = (suggestion) => {
     if (fuzzySearch) {
-      return (suggestion.toLowerCase().includes(value.toLowerCase()) &&
-              suggestion.toLowerCase() !== value.toLowerCase())
+      return (
+        suggestion.toLowerCase().includes(value.toLowerCase()) &&
+        suggestion.toLowerCase() !== value.toLowerCase()
+      );
     } else {
-      return (suggestion.toLowerCase().startsWith(value.toLowerCase()) &&
-              suggestion.toLowerCase() !== value.toLowerCase())
+      return (
+        suggestion.toLowerCase().startsWith(value.toLowerCase()) &&
+        suggestion.toLowerCase() !== value.toLowerCase()
+      );
     }
-  }
+  };
 
   return (
     <div className="searchBar-container">
@@ -36,19 +40,24 @@ const SearchBar = ({ suggestions, onChange, fuzzySearch }) => {
         placeholder="Search..."
       />
 
-      <ul className="searchBar-suggestions">
-        {(suggestions.length !== 0 && value.length !== 0) &&
-          suggestions
-            .filter(filterSuggestion)
-            .map((suggestion, index) => (
-              <li
-                key={index}
-                className="searchBar-suggestion"
-                onClick={() => handleSuggestionClick(suggestion)}
-              >
-                {suggestion}
-              </li>
-            ))}
+      <ul
+        className="searchBar-suggestions"
+        style={{
+          border:
+            value.length >= 1 ? "1px solid #ccc" : "",
+        }}
+      >
+        {suggestions.length !== 0 &&
+          value.length !== 0 &&
+          suggestions.filter(filterSuggestion).map((suggestion, index) => (
+            <li
+              key={index}
+              className="searchBar-suggestion"
+              onClick={() => handleSuggestionClick(suggestion)}
+            >
+              {suggestion}
+            </li>
+          ))}
       </ul>
     </div>
   );

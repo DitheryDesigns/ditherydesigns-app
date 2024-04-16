@@ -109,7 +109,7 @@ function App() {
     { key: "name", name: "Name" },
     { key: "age", name: "Age" },
     { key: "city", name: "City" },
-    { key: "state", name: "State" }
+    { key: "state", name: "State" },
   ];
 
   return (
@@ -171,7 +171,9 @@ function App() {
                     fuzzySearch={true}
                   />
                   <p>Fuzzy Search Disabled: </p>
-                  <SearchBar suggestions={suggestions} onChange={() => {}} />
+                  <div style={{ position: "relative", zIndex: 9}}>
+                    <SearchBar suggestions={suggestions} onChange={() => {}} />
+                  </div>
                   <ul>
                     <li>Accepts suggestions as an array of strings</li>
                     <li>
