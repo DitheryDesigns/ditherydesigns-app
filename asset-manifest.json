@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.f612f58d.css",
-    "main.js": "/portfolio-app/static/js/main.25fdffd6.js",
-    "static/js/453.494b4489.chunk.js": "/portfolio-app/static/js/453.494b4489.chunk.js",
-    "index.html": "/portfolio-app/index.html",
-    "main.f612f58d.css.map": "/portfolio-app/static/css/main.f612f58d.css.map",
-    "main.25fdffd6.js.map": "/portfolio-app/static/js/main.25fdffd6.js.map",
-    "453.494b4489.chunk.js.map": "/portfolio-app/static/js/453.494b4489.chunk.js.map"
+    "main.css": "/ditherydesigns-app/static/css/main.f612f58d.css",
+    "main.js": "/ditherydesigns-app/static/js/main.0ed908bb.js",
+    "static/js/453.494b4489.chunk.js": "/ditherydesigns-app/static/js/453.494b4489.chunk.js",
+    "index.html": "/ditherydesigns-app/index.html",
+    "main.f612f58d.css.map": "/ditherydesigns-app/static/css/main.f612f58d.css.map",
+    "main.0ed908bb.js.map": "/ditherydesigns-app/static/js/main.0ed908bb.js.map",
+    "453.494b4489.chunk.js.map": "/ditherydesigns-app/static/js/453.494b4489.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f612f58d.css",
-    "static/js/main.25fdffd6.js"
+    "static/js/main.0ed908bb.js"
   ]
 }
