@@ -56,17 +56,17 @@ function App() {
 
   //setup Stepper
   const stepperComponents = [
-    <div className="userInfoForm-container">
-      <form style={{ display: "flex", flexDirection: "column" }}>
+    <div className="userInfodiv-container">
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" required />
-      </form>
+      </div>
     </div>,
-    <div className="addressForm-container">
-      <form style={{ display: "flex", flexDirection: "column" }}>
+    <div className="addressdiv-container">
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <label htmlFor="address">Address:</label>
         <input type="text" id="address" name="address" required />
 
@@ -75,10 +75,10 @@ function App() {
 
         <label htmlFor="zip">Zip Code:</label>
         <input type="text" id="zip" name="zip" required />
-      </form>
+      </div>
     </div>,
-    <div className="paymentForm-container">
-      <form style={{ display: "flex", flexDirection: "column" }}>
+    <div className="paymentdiv-container">
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <label htmlFor="cardNumber">Card Number:</label>
         <input type="text" id="cardNumber" name="cardNumber" required />
 
@@ -87,7 +87,7 @@ function App() {
 
         <label htmlFor="cvv">CVV:</label>
         <input type="text" id="cvv" name="cvv" required />
-      </form>
+      </div>
     </div>,
   ];
 
@@ -189,7 +189,7 @@ function App() {
                   <ul>
                     <li>Accepts suggestions as an array of strings</li>
                     <li>
-                      Option to perform fuzzy or strict search on suggestions
+                      Option to perdiv fuzzy or strict search on suggestions
                       with "<code>fuzzySearch</code>" prop
                     </li>
                     <li>
