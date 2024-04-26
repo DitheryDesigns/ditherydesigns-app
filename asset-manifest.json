@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ditherydesigns-app/static/css/main.f612f58d.css",
-    "main.js": "/ditherydesigns-app/static/js/main.0ed908bb.js",
+    "main.css": "/ditherydesigns-app/static/css/main.5d75ed0c.css",
+    "main.js": "/ditherydesigns-app/static/js/main.754c0afd.js",
     "static/js/453.494b4489.chunk.js": "/ditherydesigns-app/static/js/453.494b4489.chunk.js",
     "index.html": "/ditherydesigns-app/index.html",
-    "main.f612f58d.css.map": "/ditherydesigns-app/static/css/main.f612f58d.css.map",
-    "main.0ed908bb.js.map": "/ditherydesigns-app/static/js/main.0ed908bb.js.map",
+    "main.5d75ed0c.css.map": "/ditherydesigns-app/static/css/main.5d75ed0c.css.map",
+    "main.754c0afd.js.map": "/ditherydesigns-app/static/js/main.754c0afd.js.map",
     "453.494b4489.chunk.js.map": "/ditherydesigns-app/static/js/453.494b4489.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f612f58d.css",
-    "static/js/main.0ed908bb.js"
+    "static/css/main.5d75ed0c.css",
+    "static/js/main.754c0afd.js"
   ]
 }
