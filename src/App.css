@@ -21,6 +21,21 @@
   padding: 5px;
 }
 
+.grid-item--link, .grid-item--link a {
+  margin-top: 10px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  transition-property: font-weight;
+  transition-duration: .5s;
+}
+
+.grid-item--link a:hover {
+  font-weight: 900;
+}
+
 @media (max-width: 768px) {
   .grid-item {
     flex: 1 1 calc(50% - 32px);

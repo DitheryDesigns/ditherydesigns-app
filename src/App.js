@@ -117,7 +117,7 @@ function App() {
       <div className="main-content">
         <div style={{ padding: "10px" }}>
           <div className="flex-grid">
-            {/* AccodionPanel */}
+            {/* AccodionPanel (no video) */}
             <div className="grid-item">
               <AccordionPanel title={"AccordionPanel"}>
                 <ul onClick={() => (window.location = "https://www.test.com")}>
@@ -151,13 +151,25 @@ function App() {
                       through photos on a timer
                     </li>
                   </ul>
+                  <div className="grid-item--link">
+                    <a href="https://www.youtube.com/watch?v=CuTy-CrIguQ">
+                      View Tutorial on YouTube
+                    </a>
+                  </div>
                 </div>
               </AccordionPanel>
             </div>
             {/* ProgressBar */}
             <div className="grid-item">
               <AccordionPanel title={"ProgressBar"}>
-                <ProgressBar progress={progressBarProgress} />
+                <div>
+                  <ProgressBar progress={progressBarProgress} />
+                  <div className="grid-item--link">
+                    <a href="https://www.youtube.com/watch?v=q6yip5ujGMk">
+                      View Tutorial on YouTube
+                    </a>
+                  </div>
+                </div>
               </AccordionPanel>
             </div>
             {/* SearchBar */}
@@ -171,7 +183,7 @@ function App() {
                     fuzzySearch={true}
                   />
                   <p>Fuzzy Search Disabled: </p>
-                  <div style={{ position: "relative", zIndex: 9}}>
+                  <div style={{ position: "relative", zIndex: 9 }}>
                     <SearchBar suggestions={suggestions} onChange={() => {}} />
                   </div>
                   <ul>
@@ -185,6 +197,11 @@ function App() {
                       for passing back to parent onChange
                     </li>
                   </ul>
+                  <div className="grid-item--link">
+                    <a href="https://www.youtube.com/watch?v=R090JocSekQ">
+                      View Tutorial on YouTube
+                    </a>
+                  </div>
                 </div>
               </AccordionPanel>
             </div>
@@ -203,11 +220,16 @@ function App() {
                       Hover
                     </span>
                   </Tooltip>
-                  <ul></ul>
+
+                  <div className="grid-item--link">
+                    <a href="https://www.youtube.com/watch?v=EyJ8xdGR-X0">
+                      View Tutorial on YouTube
+                    </a>
+                  </div>
                 </div>
               </AccordionPanel>
             </div>
-            {/* Stepper */}
+            {/* Stepper (no video) */}
             <div className="grid-item">
               <AccordionPanel title={"Stepper"} maxHeight={"500px"}>
                 <div style={{ justifySelf: "center" }}>
@@ -220,7 +242,7 @@ function App() {
                 </div>
               </AccordionPanel>
             </div>
-            {/* Tooltip */}
+            {/* SortableTable (no video) */}
             <div className="grid-item">
               <AccordionPanel title={"SortableTable"} maxHeight={"500px"}>
                 <div>
